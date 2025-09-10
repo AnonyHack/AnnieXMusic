@@ -25,7 +25,8 @@ def private_panel(_):
             )
         ],
         [
-            InlineKeyboardButton(text=_["S_B_7"], user_id=config.OWNER_ID),
+            # 🔧 FIXED HERE (changed from user_id=... to url="tg://user?id=...")
+            InlineKeyboardButton(text=_["S_B_7"], url=f"tg://user?id={config.OWNER_ID}"),
             InlineKeyboardButton(text=_["S_B_4"], url=config.SUPPORT_CHAT),
         ],
         [
